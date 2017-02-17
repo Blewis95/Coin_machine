@@ -8,7 +8,9 @@ end
 
 post '/change_display' do 
 
-	session[:total] = params[:change_input]
+	total = params[:change_input]
 
-	erb :display :locals => {:total => session[:total]}
+	session[:total] = calculations(total.to_i)
+
+	erb :display, :locals => {:total => session[:total]}
 end
