@@ -35,7 +35,5 @@ def calculations(input)
 
 	total = {:dollar => dollar_counter, :quarter => quarter_counter, :dime => dime_counter, :nickel => nickel_counter, :penny => penny_counter}
 
-	print total
-
 	return total
 end
