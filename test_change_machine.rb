@@ -15,4 +15,8 @@ class TestCoinMachine < Minitest::Test
 		assert_equal({:dollar=>2, :quarter=>1, :dime=>1, :nickel=>1, :penny=>1}, calculations(241))
 	end	
 
+	def test_3
+		assert_equal({:penny=>3},calculations(3))
+	end
+
 end
